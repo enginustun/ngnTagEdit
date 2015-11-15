@@ -1,6 +1,8 @@
 ngnTagEdit
 ======================
-ngnTagEdit is simple tag editor for managing tags.
+ngnTagEdit is simple tag editor for managing tags. 
+
+[Demo](http://tenkstudios.com/products/tag-edit/index.html)
 
 Requirements
 ======================
