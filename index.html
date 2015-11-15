@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        ngn-tag-edit
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/tag-edit.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/tag-edit.js"></script>
+</head>
+<body>
+    <div class="container body-content">
+
+        <h3>ngnTagEdit</h3>
+        <div class="input-group wsms-line">
+            <span class="input-group-addon">Tags</span>
+            <div class="form-control input-container wsi-tags-container">
+                <span class="wsi-tags">
+                </span>
+                <input id="WSITags" type="text" class="" placeholder="enter new tag" />
+            </div>
+        </div>
+        <br />
+
+        <input id="getTags" type="button" class="btn btn-primary" value="getTags" />
+        <input id="setTags" type="button" class="btn btn-primary" value="setTags" />
+        <input id="clearTags" type="button" class="btn btn-primary" value="clearTags" />
+    </div>
+    <script>
+        $(function () {
+
+            $('#WSITags').ngnTagEdit();
+
+            $(document).on('click', '#getTags', function () {
+                console.log($('#WSITags').ngnTagEdit('getTags'));
+            });
+
+            $(document).on('click', '#setTags', function () {
+                $('#WSITags').ngnTagEdit('setTags',['hi','this','is','set','example']);
+            });
+
+            $(document).on('click', '#clearTags', function () {
+                $('#WSITags').ngnTagEdit('clearTags');
+            });
+        });
+    </script>
+</body>
+</html>

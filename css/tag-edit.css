@@ -1,0 +1,28 @@
+.wsi-tags-container {
+    cursor: text;
+}
+
+.wsi-tags {
+    font-size: 1.3em;
+}
+
+.wsi-tag-remove {
+    font-size: 0.85em;
+    margin-left: 5px;
+}
+
+    .wsi-tag-remove:hover {
+        color: #000;
+        cursor: pointer;
+    }
+
+#WSITags {
+    border: 0;
+    padding: 3px;
+}
+
+    #WSITags:focus, #WSITags:active {
+        border: 0;
+        box-shadow: none;
+        outline: none;
+    }
